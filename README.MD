@@ -39,5 +39,6 @@
 
 #### Iniciando o sistema
 
-    - 1. Após criar um arquivo .env selecione a palavra que deseja buscar na variavél 'searchWord'
+    - 1. Crie o arquivo .env conforme exemplo .env.example
     - 2. Execute o comando npm run start
+    - 3. Digite a palavra que deseja enviar para o pubsub
