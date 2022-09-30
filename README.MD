@@ -6,23 +6,21 @@
 
 - 1. https://cloud.google.com/sdk/docs/install?hl=pt-br -> Baixe e configure o SDK GCP
 
-- 2. No GCP crie um novo projeto e um topico com o nome 'word'
+- 2. No GCP crie um novo projeto e um topico com o nome `word`
 
-- 3. Com o terminal instalado 
+- 3. Com o terminal instalado dentro da pasta do projeto logue em seu projeto já configurado com o comando `gcloud auth login`
 
-- 4. Dentro da pasta do projeto logue em seu projeto já configurado com o comando 'gcloud auth login'
+- 4. Após logar selecione o projeto 
 
-- 5. Após logar selecione o projeto 
+- 5. No pesquisar do google busque por `credencias`
 
-- 6. No pesquisar do google busque por 'credencias'
+- 6. Clique em `Criar Credencias` > `Conta de serviço` > `Configure os dados`
 
-- 7. Clique em 'Criar Credencias' > 'Conta de serviço' > 'Configure os dados'
+- 7. Clique na `chave gerada` > `chaves` > `Adicionar nova chave` > `JSON`
 
-- 8. Clique na chave gerada > 'chaves' > 'Adicionar nova chave' > 'JSON'
+- 8. Cole esse arquivo dentro da pasta do projeto ./src e renomeio para `myKey.json`
 
-- 9. Cole esse arquivo dentro da pasta do projeto ./src e renomeio para 'myKey.json'
-
-- 10. Execute o comando 'npx deploy' dentro da pasta do sistema
+- 9. Execute o comando '`npx deploy` dentro da pasta do sistema
 
 #### Iniciando o sistema
 
