@@ -15,6 +15,11 @@ const searchWord = "comida";
 
     await page.type('#palavra', searchWord) //Define nosso id e recupera a palavra definida
 
+    await Promise.all([
+        page.waitForNavigation(),
+        page.click('.icon-search')
+    ])
+
     await page.waitForTimeout(5000) // esperar 05 segundo para fechar
 
     await browser.close(); //fechar navegador
