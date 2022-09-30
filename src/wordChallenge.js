@@ -1,11 +1,13 @@
 const pup = require('puppeteer');
 const { publishMessage } = require('./publishMessage')
+const readlineSync = require('readline-sync');
 require('dotenv/config');
 
 const url = process.env.url;
-const searchWord = process.env.searchWord;
 
 async function word() {
+    const searchWord = readlineSync.question("Informe uma palavra: ")
+
     const browser = await pup.launch({ headless: true }); //inicializa o nosso navegador, headless desabilita o funcionamento oculto.
     const page = await browser.newPage(); // nova página
 
