@@ -20,6 +20,17 @@ const searchWord = "comida";
         page.click('.icon-search')
     ])
 
+    const significado = await page.evaluate(() => {
+        const el = document.querySelectorAll('#significado > .resumoBoxContent')
+        for (const newElement of el) {
+            console.log(newElement)
+            return newElement.innerText;
+        }
+    });
+
+    console.log(significado)
+
+
     await page.waitForTimeout(5000) // esperar 05 segundo para fechar
 
     await browser.close(); //fechar navegador
