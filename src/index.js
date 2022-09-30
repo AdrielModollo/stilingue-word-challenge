@@ -30,10 +30,11 @@ const searchWord = "comida";
 
     console.log(significado)
 
-
     const sinonimos = await page.$$eval('.resumoBox > .resumoBoxContent > ul > li > .contentListWrapper > .contentListData > p > a', el => el.map(link => link.title))
     console.log(sinonimos)
 
+    const analogico = await page.$$eval('#analogico > .resumoBoxContent > .tags > li > a', el => el.map(link => link.title))
+    console.log(analogico)
 
 
     await page.waitForTimeout(5000) // esperar 05 segundo para fechar
