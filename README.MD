@@ -26,5 +26,5 @@
 
 #### Iniciando o sistema
 
-    - 1. Em wordChallenge.js selecione a palavra que deseja buscar na variavél 'searchWord'
+    - 1. Após criar um arquivo .env selecione a palavra que deseja buscar na variavél 'searchWord'
     - 2. Execute o comando npm run start
