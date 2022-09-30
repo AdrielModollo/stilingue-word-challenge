@@ -1,5 +1,20 @@
 # Desafio palavras
 
+## Planejamento
+
+![meu planejamento](https://github.com/AdrielModollo/stilingue-word-challenge/blob/main/MyPlanning.drawio.png)
+
+## Dados esperado
+![dados](https://github.com/AdrielModollo/stilingue-word-challenge/blob/main/dataModeling.png)
+
+## Mapeamento
+
+![mapeamento](https://github.com/AdrielModollo/stilingue-word-challenge/blob/main/mapping.drawio.png)
+
+## Mapeamento GCP
+
+![mapeamentogcp](https://github.com/AdrielModollo/stilingue-word-challenge/blob/main/GCP.drawio.png)
+
 #### Configurando GCP
 
 > Atenção os passos abaixo são somente necessário para enviar a mensagem para o PUBSUB, caso não consiga gerar o arquivo posso fornecer os dados do meu GCP com minhas credenciais.
