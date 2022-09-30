@@ -7,7 +7,11 @@ const searchWord = "comida";
     const browser = await pup.launch({ headless: false }); //inicializa o nosso navegador, headless desabilita o funcionamento oculto.
     const page = await browser.newPage(); // nova página
     console.log("inicial");
+
     await page.goto(url); //goto chama nossa url
     console.log("fui para url");
+
+    await page.type('#palavra', searchWord) //Define nosso id e recupera a palavra definida
+
     await browser.close(); //fechar navegador
 })();
