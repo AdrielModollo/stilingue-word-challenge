@@ -8,5 +8,6 @@ const searchWord = "comida";
     const page = await browser.newPage(); // nova página
     console.log("inicial");
     await page.goto(url); //goto chama nossa url
-
+    console.log("fui para url");
+    await browser.close(); //fechar navegador
 })();
