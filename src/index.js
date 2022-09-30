@@ -39,6 +39,13 @@ const searchWord = "comida";
     const expressoes = await page.$$eval('#expressoes > .resumoBoxContent > .resumoWrapper > ul > li > .contentListWrapper > .contentListData > h3', el => el.map(link => link.title))
     console.log(expressoes)
 
+    const citacoes = await page.evaluate(() => {
+        const el = document.querySelector('#citacoes > .resumoBoxContent > .resumoWrapper')
+        return el.innerText;
+    });
+
+    console.log(citacoes)
+
     await page.waitForTimeout(5000) // esperar 05 segundo para fechar
 
     await browser.close(); //fechar navegador
