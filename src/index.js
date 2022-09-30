@@ -11,6 +11,8 @@ const searchWord = "comida";
     await page.goto(url); //goto chama nossa url
     console.log("fui para url");
 
+    await page.waitForSelector('#palavra') // esperar atribuir palavra em pesquisa
+
     await page.type('#palavra', searchWord) //Define nosso id e recupera a palavra definida
 
     await browser.close(); //fechar navegador
