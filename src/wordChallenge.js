@@ -25,7 +25,6 @@ async function word() {
     const significado = await page.evaluate(() => {
         const el = document.querySelectorAll('#significado > .resumoBoxContent')
         for (const newElement of el) {
-            console.log(newElement)
             return newElement.innerText;
         }
     });
@@ -39,7 +38,6 @@ async function word() {
     const citacoes = await page.evaluate(() => {
         const el = document.querySelectorAll('#citacoes > .resumoBoxContent > .resumoWrapper')
         for (const newElement of el) {
-            console.log(newElement)
             return newElement.innerText;
         }
     });
