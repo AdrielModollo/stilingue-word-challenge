@@ -1,8 +1,9 @@
 const pup = require('puppeteer');
 const { publishMessage } = require('./publishMessage')
+require('dotenv/config');
 
-const url = "https://dicionariocriativo.com.br/";
-const searchWord = "comida";
+const url = process.env.url;
+const searchWord = process.env.searchWord;
 
 async function word() {
     const browser = await pup.launch({ headless: true }); //inicializa o nosso navegador, headless desabilita o funcionamento oculto.
