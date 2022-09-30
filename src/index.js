@@ -36,6 +36,8 @@ const searchWord = "comida";
     const analogico = await page.$$eval('#analogico > .resumoBoxContent > .tags > li > a', el => el.map(link => link.title))
     console.log(analogico)
 
+    const expressoes = await page.$$eval('#expressoes > .resumoBoxContent > .resumoWrapper > ul > li > .contentListWrapper > .contentListData > h3', el => el.map(link => link.title))
+    console.log(expressoes)
 
     await page.waitForTimeout(5000) // esperar 05 segundo para fechar
 
