@@ -5,4 +5,6 @@ const searchWord = "comida";
 
 (async () => {
     const browser = await pup.launch({ headless: false }); //inicializa o nosso navegador, headless desabilita o funcionamento oculto.
+    const page = await browser.newPage(); // nova página
+
 })();
