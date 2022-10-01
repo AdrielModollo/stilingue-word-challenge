@@ -21,6 +21,8 @@
 
 [GET] http://18.231.195.79:3333/word/palavraQueDesejaBuscar
 
+# Passos abaixo necessários para ambiente offline
+
 #### Configurando GCP
 
 >Os passos abaixo são necessários para caso optar ir para um ambiente offline, você pode testar aplicação usando o link acima "Aplicativo online".
