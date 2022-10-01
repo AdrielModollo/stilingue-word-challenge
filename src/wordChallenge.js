@@ -44,6 +44,14 @@ async function word() {
 
     await browser.close();
 
+    console.log(
+        'Significados: ', significado, '\n',
+        'Sinonimos', sinonimos, '\n',
+        'Analogicos:', analogico, '\n',
+        'Expressões: ', expressoes, '\n',
+        'Citações: ', citacoes
+    )
+
     return publishMessage(JSON.stringify({ significado: significado, sinonimos: sinonimos, analogico: analogico, expressoes: expressoes, citacoes: citacoes }))
 
 };
