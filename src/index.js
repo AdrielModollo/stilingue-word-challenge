@@ -1,17 +1,12 @@
-const express = require('express');
-const word = require('./wordChallenge');
+const express = require('express')
+const routes = require('./routes')
+const bodyParser = require('body-parser');
 
 const app = express();
 
-app.use(express.json());
+app
+    .use(express.json())
+    .use(routes)
+    .use(bodyParser.json())
 
-app.listen(3000, () => {
-    console.log('Servidor rodando na porta 3000...')
-});
-
-app.get('/teste', (req, res) => {
-    return res.send(word);
-});
-
-
-app.listen(3333)
+app.listen(3333);
