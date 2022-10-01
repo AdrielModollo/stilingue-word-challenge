@@ -47,7 +47,7 @@ module.exports = {
 
         const result = `Significado: ${significado}, Sinônimos: ${sinonimos}, Analógicas: ${analogico}, Expressões: ${expressoes}, Citações: ${citacoes}  `
 
-        publishMessage(JSON.stringify(result))
+        //publishMessage(JSON.stringify(result)) <-Caso queira utilizar o envio para PUBSUB
 
         return res.json(result)
 
