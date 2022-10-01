@@ -17,7 +17,9 @@
 
 # Aplicativo online
 
-http://18.231.195.79:3333/word/palavraQueDesejaBuscar
+> Faça uma requisição GET, usando o postman, insomnia, ou outros.
+
+[GET] http://18.231.195.79:3333/word/palavraQueDesejaBuscar
 
 #### Configurando GCP
 
