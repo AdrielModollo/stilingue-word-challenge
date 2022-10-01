@@ -15,7 +15,13 @@
 
 ![mapeamentogcp](https://github.com/AdrielModollo/stilingue-word-challenge/blob/main/GCP.drawio.png)
 
+# Aplicativo online
+
+http://18.231.195.79:3333/word/palavraQueDesejaBuscar
+
 #### Configurando GCP
+
+>Os passos abaixo são necessários para caso optar ir para um ambiente offline, você pode testar aplicação usando o link acima "Aplicativo online".
 
 > Atenção os passos abaixo são somente necessário para enviar a mensagem para o PUBSUB, caso não consiga gerar o arquivo posso fornecer os dados do meu GCP com minhas credenciais.
 
