@@ -9,7 +9,7 @@ module.exports = {
         const reqWord = req.params
         const searchWord = reqWord.name
 
-        const browser = await pup.launch({ executablePath: '/usr/bin/chromium-browser', ignoreDefaultArgs: ['--disable-extensions'] }); //inicializa o nosso navegador, headless desabilita o funcionamento oculto.
+        const browser = await pup.launch({}); //inicializa o nosso navegador, headless desabilita o funcionamento oculto.
         const page = await browser.newPage(); // nova página
 
         await page.goto(url); //goto chama nossa url
