@@ -32,6 +32,8 @@
 
 [GET] http://18.231.195.79:3333/word/palavraQueDesejaBuscar
 
+> Você pode usar algum site para fazer a consulta: https://restninja.io/share/5cb4e8c24236697a416f36c78ddba6d8532b2e05/0
+
 > Neste ambiente online o gcp já está configurado e recebendo os dados automaticamente.
 
 ![mapeamentogcp](https://github.com/AdrielModollo/stilingue-word-challenge/blob/main/GCP%20pubsub.png)
