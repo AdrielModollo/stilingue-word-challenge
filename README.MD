@@ -15,6 +15,17 @@
 
 ![mapeamentogcp](https://github.com/AdrielModollo/stilingue-word-challenge/blob/main/GCP.drawio.png)
 
+## Tratamento de erros
+
+> Caso ocorrer qualquer erro o sistema deve apresentar falha retornando o middleware global padrão configurado.
+
+```
+{
+    "status": "error",
+    "message": "Internal server error"
+}
+```
+
 # Aplicativo online
 
 > Faça uma requisição GET, usando o postman, insomnia, ou outros.
@@ -57,3 +68,5 @@
     - 2. Execute o comando npm run dev
     - 4. Faça um GET utilizando a route localhost:3333/word/palavraQueDesejaBuscar
     - 5. Pronto agora o sistema irá retornar os dados e encaminhar automaticamente para o pubsub
+    
+
