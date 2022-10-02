@@ -21,6 +21,10 @@
 
 [GET] http://18.231.195.79:3333/word/palavraQueDesejaBuscar
 
+> Neste ambiente online o gcp já está configurado e recebendo os dados automaticamente.
+
+![mapeamentogcp](https://github.com/AdrielModollo/stilingue-word-challenge/blob/main/GCP%20pubsub.png)
+
 # Passos abaixo necessários para ambiente offline
 
 #### Configurando GCP
