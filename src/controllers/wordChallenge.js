@@ -45,7 +45,7 @@ module.exports = {
 
         await browser.close();
 
-        const result = `Significado: ${significado}, Sinônimos: ${sinonimos}, Analógicas: ${analogico}, Expressões: ${expressoes}, Citações: ${citacoes}  `
+        const result = `Palavra: ${searchWord}, Significado: ${significado}, Sinônimos: ${sinonimos}, Analógicas: ${analogico}, Expressões: ${expressoes}, Citações: ${citacoes}  `
 
         publishMessage(JSON.stringify(result))
 
