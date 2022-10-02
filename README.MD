@@ -55,4 +55,5 @@
 
     - 1. Crie o arquivo .env conforme exemplo .env.example
     - 2. Execute o comando npm run dev
-    - 3. Digite a palavra que deseja enviar para o pubsub
+    - 4. Faça um GET utilizando a route localhost:3333/word/palavraQueDesejaBuscar
+    - 5. Pronto agora o sistema irá retornar os dados e encaminhar automaticamente para o pubsub
